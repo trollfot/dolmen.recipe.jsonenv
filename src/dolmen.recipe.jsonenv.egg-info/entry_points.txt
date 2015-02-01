@@ -1,3 +1,0 @@
-[zc.buildout]
-default = dolmen.recipe.jsonenv:JSONDump
-
