@@ -30,7 +30,7 @@ def extract_paths(eggs):
     for p in eggs_paths:
         if p not in unique_egg_paths:
             unique_egg_paths.append(p)
-    return map(realpath, unique_egg_paths)
+    return list(map(realpath, unique_egg_paths))
 
 
 class JSONDump(object):
