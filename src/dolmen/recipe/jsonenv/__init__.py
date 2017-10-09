@@ -47,7 +47,7 @@ class JSONDump(object):
         """Create a json structure containing the needed eggs' paths
         """
         path = self.buildout['buildout']['directory']
-        fname = self.options.get('output') or 'config.json'
+        fname = self.options.get('output', 'config.json')
         output = os.path.join(path, fname)
         config = {
             'paths': extract_paths(self.egg),
